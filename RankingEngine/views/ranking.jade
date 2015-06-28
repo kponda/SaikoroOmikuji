@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  table(style="widht:100%")
+    tr
+      th ユーザー名
+      th サイコロポイント
+      th 吉凶
+    - for (var i in users)
+      tr
+        td= users[i].user_name
+        td= users[i].saikoro_point
+        td= users[i].omikuji_ranking
+  
+   a(href="/") スタート

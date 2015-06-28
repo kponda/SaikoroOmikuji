@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  p 待っています
+
+  a(href="/") スタート
+
+  p
+    input#dummy_result_button(type="button" value="結果表示ダミー")
+  
+  p
+    input#saikoro_point(type="text" value="10")

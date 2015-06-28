@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  p 結果表示
+
+  p ユーザー名
+  p= user.user_name
+  
+  p サイコロポイント
+  p= user.saikoro_point
+
+  p 吉凶
+  p= user.omikuji_ranking
+
+  a(href="/ranking") ランキング
