@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form(method="POST")
+    p ユーザー名
+      input(type="text" name="user_name")
+    input(type="submit" value="スタート")
+
+  a(href="/ranking") ランキングに戻る

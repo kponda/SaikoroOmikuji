@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form(method="POST")
+    p ユーザー名
+      p= user_name
+    p サイコロポイント
+      input(type="text" name="saikoro_point")
+    input(type="submit" value="登録")
