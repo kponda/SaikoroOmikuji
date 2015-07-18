@@ -43,7 +43,7 @@ var parseHtml = function(html, callback) {
     // console.log(text);
 
     // 画像URL
-    var img = $('#mw-content-text img', doc).first().attr('src');
+    var img = $('#mw-content-text .thumbinner img', doc).first().attr('src');
     // console.log(img);
 
     if (!img || img.length == 0) {
